@@ -74,5 +74,5 @@ canvas.postscript(file="spiral.eps")  # Temporary EPS file
 img = Image.open("spiral.eps")
 img.save("spiral.png", "PNG")
 
-print("Spiral image saved as spiral.png")
+print("`Spiral image saved as spiral.png")
 turtle.done()
