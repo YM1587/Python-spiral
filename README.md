@@ -24,8 +24,27 @@ Pillow for image conversion (pip install pillow)
 ##  How It Works
 The program initializes the Turtle Graphics screen and sets up the canvas.
 
-The recursive draw_spiral() function calculates and draws hexagon-based spiral paths with a twist angle (alpha).
+The recursive ```draw_spiral()``` function calculates and draws hexagon-based spiral paths with a twist angle ```(alpha).```
 
 It uses trigonometry to manage direction and distance for drawing.
 
 Once complete, the canvas is saved as an EPS file, then converted to a PNG using Pillow.
+##  How to Run
+Install dependencies:
+```
+bash 
+pip install pillow
+```
+Run the script:
+```
+bash 
+python spiral.py
+```
+Check your project directory for spiral.png.
+## Sample Spiral Output
+A hypnotic, colorful pattern of interlocking spirals—ideal for artistic or generative design experiments.
+## Fun Fact
+This pattern uses properties of regular hexagons and clever recursion to simulate a natural spiral structure, often found in plants, shells, and galaxies.
+
+## 📝 License
+This project is open-source and free to use for educational or creative purposes.
