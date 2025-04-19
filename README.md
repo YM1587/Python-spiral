@@ -43,6 +43,66 @@ python spiral.py
 Check your project directory for spiral.png.
 ## Sample Spiral Output
 A hypnotic, colorful pattern of interlocking spirals—ideal for artistic or generative design experiments.
+## What is Pillow?
+<b>Pillow</b>  is a powerful and easy-to-use Python Imaging Library (PIL) fork that allows you to open, manipulate, and save many different image file formats. It’s widely used in tasks like:
+
+Image conversion (e.g., EPS to PNG)
+
+Cropping, resizing, rotating, and flipping images
+
+Drawing shapes or text on images
+
+Applying filters and effects
+
+Automating image processing workflows
+
+Pillow is the go-to library in Python for working with images in a programmatic way.
+##  Why Is Pillow Used in This Project?
+In your spiral drawing program, you use Turtle Graphics to create a visual pattern. Turtle’s default way of saving images is in EPS (Encapsulated PostScript) format, which is great for vector-based graphics but not easily viewable in many everyday applications.
+
+That’s where Pillow comes in — it handles the EPS file and converts it to a more user-friendly format like PNG, which is widely supported and can be shared or posted online.
+## How It’s Used:
+```
+from PIL import Image
+
+# Load the EPS file created by turtle graphics
+img = Image.open("spiral.eps")
+
+# Save the image in PNG format
+img.save("spiral.png", "PNG")
+
+```
+So basically:
+
+Turtle draws the spiral and saves it as an .eps file.
+
+Pillow opens that .eps file and saves it as .png.
+
+## Supported File Formats
+Pillow supports a wide range of file formats, including:
+
+PNG, JPEG, GIF, BMP, TIFF
+
+EPS, PDF, ICO, WEBP
+
+and more...
+
+This makes it a versatile choice for any kind of image processing in Python.
+## Additional Features
+Here are just a few of the powerful things you can do with Pillow:
+
+Convert between formats
+
+Resize or crop images
+
+Add filters or watermarks
+
+Generate thumbnails
+
+Draw shapes, lines, or text on images
+
+If you ever want to expand your program to add titles, effects, or even watermark your spiral images, Pillow can help with that too!
+
 ## Fun Fact
 This pattern uses properties of regular hexagons and clever recursion to simulate a natural spiral structure, often found in plants, shells, and galaxies.
 
